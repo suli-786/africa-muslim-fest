@@ -1,0 +1,26 @@
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-heading {
+  text-align: left;
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+.about-heading h2 {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-layout {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .about-heading {
+    margin-top: 3rem;
+  }
+}
