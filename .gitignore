@@ -1,0 +1,25 @@
+# Build output
+_site/
+
+# Jekyll caches
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/bundle/
+
+# Node (if ever used locally)
+node_modules/
+
+# Editors/OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs/temp
+*.log
+tmp/

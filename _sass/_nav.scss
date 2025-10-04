@@ -6,7 +6,9 @@
 .amf-nav__brand img { display: block; height: 54px; }
 .amf-nav__links { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 8px; }
 .amf-nav__links a { color: var(--amf-black); font-weight: 500; font-size: 0.95rem; padding: 6px 10px; border-radius: 6px; position: relative; transition: color .2s ease, background-color .2s ease, box-shadow .2s ease; }
+.amf-nav__links a.is-active { color: var(--amf-white); background: rgba(0,0,0,0.12); }
 .amf-nav__links a:not(.amf-nav__cta)::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: 4px; height: 2px; background: var(--amf-secondary); transform: scaleX(0); transform-origin: left; transition: transform .2s ease; }
+.amf-nav__links a.is-active::after { transform: scaleX(1); }
 .amf-nav__links a:not(.amf-nav__cta):hover::after { transform: scaleX(1); }
 .amf-nav__links a:hover { color: var(--amf-white); background: rgba(0,0,0,0.08); }
 .amf-nav__cta { background: var(--amf-white); color: var(--amf-black); border: 0; border-radius: 6px; box-shadow: 0 1px 0 rgba(0,0,0,0.06); }

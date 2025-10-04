@@ -43,3 +43,7 @@ a:hover { color: var(--amf-secondary); }
 .section-title { font-family: "Hahmlet", serif; font-weight: 700; font-size: clamp(1.6rem, calc(1.2rem + 1.5vw), 2rem); text-align: center; margin: 0 0 .5rem; }
 .section-title::after { content: ""; display: block; width: 72px; height: 3px; margin: .5rem auto 0; background: var(--amf-secondary); border-radius: 2px; }
 .section-caption { text-align: center; color: rgba(0,0,0,0.72); margin: 0 auto 1.25rem; max-width: 58ch; }
+
+/* Skip link (keyboard accessibility) */
+.skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.skip-link:focus { position: fixed; left: 12px; top: 12px; width: auto; height: auto; padding: .5rem .75rem; background: #000; color: #fff; border-radius: 6px; z-index: 2000; }

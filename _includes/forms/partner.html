@@ -1,0 +1,88 @@
+<section id="partner-form" class="page__section form-section">
+  <div class="page__inner-wrap">
+    <div class="form-card">
+      <h2>Partner with Africa Muslim Fest 2026</h2>
+      <p class="form-intro">Complete the form below to apply as a partner or sponsor. We’ll review and get back to you.</p>
+
+      <!-- Hidden iframe prevents redirect to Google’s default thank-you page -->
+      <iframe name="gform-target" id="gformTarget" style="display:none"></iframe>
+
+      <!-- Replace GOOGLE_FORM_ACTION with your Google Form formResponse URL -->
+      <form id="partnerForm" class="gform" method="POST" target="gform-target" action="https://docs.google.com/forms/d/e/GOOGLE_FORM_ID/formResponse">
+
+        <div class="form-grid">
+          <!-- 1. Full Name (entry.xxxxxxx) -->
+          <label class="gfield">
+            <span>Full Name</span>
+            <input type="text" name="entry.111111111" required>
+            <div class="field-error" hidden>Please enter your full name.</div>
+          </label>
+
+          <!-- 2. Email Address (entry.xxxxxxx) -->
+          <label class="gfield">
+            <span>Email Address</span>
+            <input type="email" name="entry.222222222" required>
+            <div class="field-error" hidden>Please enter a valid email address.</div>
+          </label>
+
+          <!-- 3. Organization / Company (entry.xxxxxxx) -->
+          <label class="gfield">
+            <span>Organization / Company</span>
+            <input type="text" name="entry.333333333" required>
+            <div class="field-error" hidden>Please enter your organization or company.</div>
+          </label>
+
+          <!-- 4. City & Country (entry.xxxxxxx) -->
+          <label class="gfield">
+            <span>City &amp; Country</span>
+            <input type="text" name="entry.444444444" required>
+            <div class="field-error" hidden>Please enter your city and country.</div>
+          </label>
+        </div>
+
+        <!-- 5. Type of Partnership (checkboxes share same entry.xxxxxxx name) -->
+        <fieldset class="gfieldset">
+          <legend>Type of Partnership</legend>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="entry.555555555" value="Financial Sponsor"> Financial Sponsor</label>
+            <label class="check"><input type="checkbox" name="entry.555555555" value="Media Partner"> Media Partner</label>
+            <label class="check"><input type="checkbox" name="entry.555555555" value="Strategic Partner"> Strategic Partner</label>
+            <label class="check"><input type="checkbox" name="entry.555555555" value="Other"> Other</label>
+          </div>
+          <div class="field-error" id="partnershipError" hidden>Please select at least one partnership type.</div>
+        </fieldset>
+
+        <!-- 6. Why interested? (entry.xxxxxxx) -->
+        <label class="gfield">
+          <span>Why are you interested in partnering?</span>
+          <textarea name="entry.666666666" rows="5" required></textarea>
+          <div class="field-error" hidden>Please tell us why you want to partner.</div>
+        </label>
+
+        <!-- 7. Consent (entry.xxxxxxx) -->
+        <label class="check gfield">
+          <input type="checkbox" name="entry.777777777" value="Yes" required>
+          I agree to be contacted about this application.
+        </label>
+        <div class="field-error" id="consentError" hidden>Please agree to be contacted.</div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-submit">Apply as Partner</button>
+        </div>
+
+        <!-- Prevent Google redirect; show inline success after iframe loads -->
+        <div id="partnerSuccess" class="form-success" hidden>Thanks, your submission has been received!</div>
+      </form>
+
+      <!--
+        IMPORTANT: Replace the placeholder action URL and the entry.* names with
+        your real Google Form `formResponse` URL and entry IDs.
+        How to find entry IDs:
+        - Open your Google Form
+        - Inspect each input in the rendered form (View Page Source or DevTools)
+        - Note the `name="entry.xxxxxxxxxx"` for each field
+        - Paste those values above in the matching inputs
+      -->
+    </div>
+  </div>
+</section>

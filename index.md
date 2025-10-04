@@ -9,7 +9,7 @@ header:
     - label: "Get Involved"
       url: "#get-involved"
       class: "btn--primary"
-excerpt: "Cape Town — November 2026  
+excerpt: "Cape Town — November 2026<br>
 Celebrating African Muslim Leadership, Culture, Innovation, and Excellence"
 ---
 

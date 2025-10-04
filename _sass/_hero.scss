@@ -1,5 +1,5 @@
 /* Fullscreen Hero */
-.page__hero--overlay { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background-size: cover; background-position: center; position: relative; }
+.page__hero--overlay { min-height: calc(100svh - var(--amf-nav-h, 64px)); display: flex; align-items: center; justify-content: center; text-align: center; background-size: cover; background-position: center; position: relative; }
 .page__hero--overlay::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 28%, rgba(0,0,0,0.18) 55%, rgba(0,0,0,0.0) 100%); pointer-events: none; z-index: 0; }
 .page__hero--overlay .hero__content { max-width: 900px; margin: 0 auto; padding: 1.25rem 1rem; position: relative; z-index: 1; }
 @media (min-width: 768px) { .page__hero--overlay .hero__content { padding: 1.75rem 1.5rem; } }

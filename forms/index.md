@@ -5,17 +5,65 @@ header:
   overlay_color: "#00A597"
   overlay_filter: "0.5"
   overlay_image: /assets/images/hero.jpg
-excerpt: "Choose your path to participate in Africa Muslim Fest 2026"
+excerpt: "Apply to partner with Africa Muslim Fest — complete the form below."
 ---
 
-<div class="page__inner-wrap">
-  <h2>Forms will be available here soon</h2>
-  <p>Thanks for your interest. In the meantime, choose a path below and we’ll publish the application forms shortly.</p>
+<section id="partner" class="page__section form-section">
+  <div class="page__inner-wrap">
+    <div class="embed-wrap">
+      <div class="embed-card">
+        <div class="embed-skeleton" aria-hidden="true"></div>
+        <iframe
+          class="embed-iframe"
+          title="Partner / Sponsor Application"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe-N_gpByLrIu9e6eoBaocws4XZEp9QdnUkS6Ot_VcDhoysow/viewform?embedded=true"
+          loading="eager"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          allowtransparency="true"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <ul>
-    <li id="partner"><strong>Partner / Sponsor</strong> — financial sponsor, media partner, or strategic partner.</li>
-    <li id="event"><strong>Event Partner / Organiser</strong> — host an event (multi‑day, single‑day, or micro).</li>
-    <li id="committee"><strong>Organising Committee</strong> — help with programming, logistics, media, partnerships, and more.</li>
-  </ul>
-</div>
+<section id="event" class="page__section form-section">
+  <div class="page__inner-wrap">
+    <div class="embed-wrap">
+      <div class="embed-card">
+        <div class="embed-skeleton" aria-hidden="true"></div>
+        <iframe
+          class="embed-iframe"
+          title="Host Your Event Application"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdPxgCO_32vko2dgIot0YoicczwyE71xq8C8B9X4rieHQqDag/viewform?embedded=true"
+          loading="eager"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          allowtransparency="true"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="committee" class="page__section form-section">
+  <div class="page__inner-wrap">
+    <div class="embed-wrap">
+      <div class="embed-card">
+        <div class="embed-skeleton" aria-hidden="true"></div>
+        <iframe
+          class="embed-iframe"
+          title="Join the Organising Committee"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScWI1wxyRA1_bpBCnX8uP1ddWm0PN4AWqmpFEdf2YV6148NOg/viewform?embedded=true"
+          loading="eager"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          allowtransparency="true"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
