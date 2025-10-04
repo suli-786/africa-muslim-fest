@@ -124,6 +124,59 @@ window.addEventListener('scroll', function () {
   });
 })();
 
+// Section reveal animations
+(function () {
+  var animatedSections = Array.prototype.slice.call(document.querySelectorAll('.page__section[data-animate]'));
+  if (!animatedSections.length) return;
+
+  var reduceMotionQuery = null;
+  if (window.matchMedia) {
+    reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  }
+
+  var supportsIO = 'IntersectionObserver' in window;
+
+  function revealAll() {
+    animatedSections.forEach(function (section) {
+      section.classList.add('is-revealed');
+    });
+  }
+
+  if (!supportsIO || (reduceMotionQuery && reduceMotionQuery.matches)) {
+    revealAll();
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -15% 0px', threshold: 0.2 });
+
+  animatedSections.forEach(function (section) {
+    if (!section.classList.contains('is-revealed')) {
+      observer.observe(section);
+    }
+  });
+
+  if (reduceMotionQuery) {
+    var handleChange = function (event) {
+      if (event.matches) {
+        revealAll();
+        observer.disconnect();
+      }
+    };
+    if (reduceMotionQuery.addEventListener) {
+      reduceMotionQuery.addEventListener('change', handleChange);
+    } else if (reduceMotionQuery.addListener) {
+      reduceMotionQuery.addListener(handleChange);
+    }
+  }
+})();
+
 // Google Forms inline success handler (hidden iframe technique)
 (function () {
   var form = document.getElementById('partnerForm');
