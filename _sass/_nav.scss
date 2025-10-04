@@ -13,9 +13,13 @@
 .amf-nav__links a:hover { color: var(--amf-white); background: rgba(0,0,0,0.08); }
 .amf-nav__cta { background: var(--amf-white); color: var(--amf-black); border: 0; border-radius: 6px; box-shadow: 0 1px 0 rgba(0,0,0,0.06); }
 .amf-nav__cta:hover { background: #f2f2f2; color: var(--amf-black); }
-.amf-nav__toggle { display: none; width: 36px; height: 32px; align-items: center; justify-content: center; border: 0; background: transparent; padding: 0; }
-.amf-nav__toggle span { display: block; width: 20px; height: 2px; background: var(--amf-black); }
+.amf-nav__toggle { display: none; width: 36px; height: 32px; align-items: center; justify-content: center; border: 0; background: transparent; padding: 0; position: relative; }
+.amf-nav__toggle span { display: block; width: 20px; height: 2px; background: var(--amf-black); transition: transform .3s ease, opacity .3s ease; transform-origin: center; }
 .amf-nav__toggle span + span { margin-top: 4px; }
+.amf-nav__toggle.is-open span { position: relative; }
+.amf-nav__toggle.is-open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.amf-nav__toggle.is-open span:nth-child(2) { opacity: 0; }
+.amf-nav__toggle.is-open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 .amf-nav-spacer { height: 64px; }
 @media (max-width: 768px) {
   .amf-nav__toggle { display: inline-flex; }
@@ -24,3 +28,4 @@
   .amf-nav__links a { padding: 12px 8px; }
 }
 .amf-nav.is-scrolled { box-shadow: 0 4px 16px rgba(0,0,0,0.18); }
+body.nav-open { overflow: hidden; }

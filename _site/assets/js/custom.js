@@ -6,6 +6,10 @@
     toggle.addEventListener('click', function () {
       var open = menu.classList.toggle('show');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.classList.toggle('is-open', open);
+      if (document.body) {
+        document.body.classList.toggle('nav-open', open);
+      }
     });
   }
 })();
