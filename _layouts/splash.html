@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
     {% include head/custom.html %}
+    {%- if page.header.overlay_image -%}
+    <link rel="preload" as="image" href="{{ page.header.overlay_image | relative_url }}">
+    {%- endif -%}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

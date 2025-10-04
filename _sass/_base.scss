@@ -52,16 +52,10 @@ a:hover { color: var(--amf-secondary); }
               transform var(--section-reveal-duration) var(--section-reveal-ease);
 }
 
-.page__section[data-animate] .section-title {
-  transition-delay: 0.05s;
-}
-
-.page__section[data-animate] .section-caption {
-  transition-delay: 0.15s;
-}
-
+.page__section[data-animate] .section-title,
+.page__section[data-animate] .section-caption,
 .page__section[data-animate] .page__inner-wrap > *:not(.section-title):not(.section-caption) {
-  transition-delay: 0.2s;
+  transition-delay: 0s;
 }
 
 .page__section.is-revealed .page__inner-wrap > * {

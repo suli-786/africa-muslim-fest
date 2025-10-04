@@ -26,10 +26,11 @@
   }
 
   .pillars-row--secondary {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    --pillar-track-max: 280px;
+    grid-template-columns: repeat(3, minmax(220px, var(--pillar-track-max)));
     justify-content: center;
     margin-inline: auto;
-    max-width: min(960px, 100%);
+    width: min(100%, calc(3 * var(--pillar-track-max) + 2 * 1.2rem));
   }
 }
 .pillar-item { background: var(--amf-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 12px; padding: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: flex-start; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
