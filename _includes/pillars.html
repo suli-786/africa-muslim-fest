@@ -1,24 +1,45 @@
 <section id="pillars" class="page__section">
   <div class="page__inner-wrap">
-    <h2 class="section-title">Our 8 Pillars</h2>
+    <h2 class="section-title">Our 7 Pillars</h2>
     <p class="section-caption">Africa Muslim Fest spans every dimension of Muslim life and futures.
     Each pillar gathers events, partners, and communities under a shared theme.</p>
 
+    {% assign first_row = site.data.pillars | slice: 0, 4 %}
+    {% assign second_row = site.data.pillars | slice: 4, site.data.pillars.size %}
+
     <div class="pillars-grid" role="list">
-      {% for item in site.data.pillars %}
-      <article class="pillar-item" role="listitem">
-        <div class="pillar-icon" aria-hidden="true">
-          {% if item.icon %}
-            <img src="{{ item.icon | relative_url }}" alt="" loading="lazy">
-          {% else %}
-            <img src="{{ '/assets/images/icon-placeholder.svg' | relative_url }}" alt="" loading="lazy">
-          {% endif %}
-        </div>
-        <h3 class="pillar-title">{{ item.title }}</h3>
-        <p class="pillar-excerpt">{{ item.excerpt }}</p>
-      </article>
-      {% endfor %}
+      <div class="pillars-row pillars-row--primary" role="presentation">
+        {% for item in first_row %}
+        <article class="pillar-item" role="listitem">
+          <div class="pillar-icon" aria-hidden="true">
+            {% if item.icon %}
+              <img src="{{ item.icon | relative_url }}" alt="" loading="lazy">
+            {% else %}
+              <img src="{{ '/assets/images/icon-placeholder.svg' | relative_url }}" alt="" loading="lazy">
+            {% endif %}
+          </div>
+          <h3 class="pillar-title">{{ item.title }}</h3>
+          <p class="pillar-excerpt">{{ item.excerpt }}</p>
+        </article>
+        {% endfor %}
+      </div>
+
+      <div class="pillars-row pillars-row--secondary" role="presentation">
+        {% for item in second_row %}
+        <article class="pillar-item" role="listitem">
+          <div class="pillar-icon" aria-hidden="true">
+            {% if item.icon %}
+              <img src="{{ item.icon | relative_url }}" alt="" loading="lazy">
+            {% else %}
+              <img src="{{ '/assets/images/icon-placeholder.svg' | relative_url }}" alt="" loading="lazy">
+            {% endif %}
+          </div>
+          <h3 class="pillar-title">{{ item.title }}</h3>
+          <p class="pillar-excerpt">{{ item.excerpt }}</p>
+        </article>
+        {% endfor %}
+      </div>
     </div>
   </div>
-  
+
 </section>
