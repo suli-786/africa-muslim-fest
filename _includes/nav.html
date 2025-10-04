@@ -1,0 +1,21 @@
+<nav class="amf-nav" id="amfNav">
+  <div class="amf-nav__inner">
+    <a href="{{ '/' | relative_url }}" class="amf-nav__brand">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Africa Muslim Fest logo">
+    </a>
+
+    <button class="amf-nav__toggle" aria-expanded="false" aria-controls="amfNavMenu" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="amf-nav__links" id="amfNavMenu">
+      {% assign items = site.data.navigation.main %}
+      {% for item in items %}
+        <li>
+          <a href="{{ item.url | relative_url }}"{% if forloop.last %} class="amf-nav__cta"{% endif %}>{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
+<div class="amf-nav-spacer" aria-hidden="true"></div>

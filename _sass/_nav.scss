@@ -1,0 +1,24 @@
+/* =========================
+   Custom AMF Nav
+   ========================= */
+.amf-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #4CC0B6; transition: top .4s ease, box-shadow .25s ease, background-color .25s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.12); border-bottom: 1px solid rgba(0,0,0,0.06); }
+.amf-nav__inner { max-width: 1120px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.amf-nav__brand img { display: block; height: 54px; }
+.amf-nav__links { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 8px; }
+.amf-nav__links a { color: var(--amf-black); font-weight: 500; font-size: 0.95rem; padding: 6px 10px; border-radius: 6px; position: relative; transition: color .2s ease, background-color .2s ease, box-shadow .2s ease; }
+.amf-nav__links a:not(.amf-nav__cta)::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: 4px; height: 2px; background: var(--amf-secondary); transform: scaleX(0); transform-origin: left; transition: transform .2s ease; }
+.amf-nav__links a:not(.amf-nav__cta):hover::after { transform: scaleX(1); }
+.amf-nav__links a:hover { color: var(--amf-white); background: rgba(0,0,0,0.08); }
+.amf-nav__cta { background: var(--amf-white); color: var(--amf-black); border: 0; border-radius: 6px; box-shadow: 0 1px 0 rgba(0,0,0,0.06); }
+.amf-nav__cta:hover { background: #f2f2f2; color: var(--amf-black); }
+.amf-nav__toggle { display: none; width: 36px; height: 32px; align-items: center; justify-content: center; border: 0; background: transparent; padding: 0; }
+.amf-nav__toggle span { display: block; width: 20px; height: 2px; background: var(--amf-black); }
+.amf-nav__toggle span + span { margin-top: 4px; }
+.amf-nav-spacer { height: 64px; }
+@media (max-width: 768px) {
+  .amf-nav__toggle { display: inline-flex; }
+  .amf-nav__links { position: absolute; top: 100%; right: 0; left: 0; flex-direction: column; align-items: stretch; background: #4CC0B6; display: none; padding: 8px 16px 12px; border-top: 1px solid rgba(0,0,0,0.1); box-shadow: 0 10px 20px rgba(0,0,0,0.14); }
+  .amf-nav__links.show { display: flex; }
+  .amf-nav__links a { padding: 12px 8px; }
+}
+.amf-nav.is-scrolled { box-shadow: 0 4px 16px rgba(0,0,0,0.18); }

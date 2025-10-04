@@ -1,0 +1,12 @@
+-
+  title: "Multi-Day Events"
+  excerpt: "Conferences, exhibitions, summits, education programs, workshops, and markets that span multiple days."
+  icon: "/assets/images/icons/multiday.svg"
+-
+  title: "Single-Day Events"
+  excerpt: "Forums, conferences, hackathons, performances, and workshops that run in a single day."
+  icon: "/assets/images/icons/singleday.svg"
+-
+  title: "Micro Events"
+  excerpt: "Meetups, panels, screenings, creative showcases, performances, galleries, social and sports gatherings."
+  icon: "/assets/images/icons/micro.svg"

@@ -1,0 +1,24 @@
+<section id="event-types" class="page__section">
+  <div class="page__inner-wrap">
+    <h2 class="section-title">Host Your Event at Africa Muslim Fest</h2>
+    <p class="section-caption">We welcome events of all sizes, across every pillar. Choose a format that fits your idea and community.</p>
+
+    <div class="events-grid" role="list">
+      {% for item in site.data.event_types %}
+      <article class="event-card" role="listitem">
+        <div class="event-icon" aria-hidden="true">
+          {% if item.icon %}
+            <img src="{{ item.icon | relative_url }}" alt="" loading="lazy">
+          {% endif %}
+        </div>
+        <h3 class="event-title">{{ item.title }}</h3>
+        <p class="event-excerpt">{{ item.excerpt }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="section-cta">
+      <a class="btn btn--primary" href="#get-involved">Host Your Event</a>
+    </div>
+  </div>
+</section>

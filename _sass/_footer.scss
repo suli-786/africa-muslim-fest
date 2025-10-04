@@ -1,0 +1,25 @@
+/* =========================
+   Footer
+   ========================= */
+.site-footer { background: var(--amf-primary); color: var(--amf-white); }
+.site-footer__inner { max-width: 1120px; margin: 0 auto; padding: 1.75rem 1rem 1.25rem; display: grid; grid-template-columns: 1fr; gap: 1.1rem 1.25rem; }
+@media (min-width: 960px) { .site-footer__inner { grid-template-columns: 1.6fr 1fr; align-items: start; } }
+.site-footer__bottom { border-top: 1px solid rgba(0,0,0,0.08); background: rgba(0,0,0,0.05); margin-top: .9rem; }
+.site-footer__bottom-inner { max-width: 1120px; margin: 0 auto; padding: .75rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+.site-footer__bottom .site-footer__copy { margin: 0; opacity: .8; font-weight: 500; font-size: .85rem; }
+.site-footer__legal { list-style: none; padding: 0; margin: 0; display: flex; gap: .75rem; }
+.site-footer__legal a { color: #fff; opacity: .8; text-decoration: none; font-size: .9rem; }
+.site-footer__legal a:hover { text-decoration: underline; }
+.site-footer__brand img { height: 36px; display: block; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15)); }
+.footer-tagline { margin: .3rem 0 0; font-size: .9rem; opacity: .9; line-height: 1.5; max-width: 42ch; font-weight: 500; }
+.footer-tagline::after { content: ""; display: block; width: 64px; height: 2px; background: var(--amf-secondary); border-radius: 2px; margin: .5rem 0 0; opacity: .95; }
+.footer-heading { margin: 0 0 .4rem; font-size: 0.95rem; font-weight: 600; letter-spacing: .3px; opacity: .95; }
+.footer-links { list-style: none; padding: 0; margin: 0; display: grid; gap: .35rem; }
+.footer-links a { color: #fff; opacity: .9; text-decoration: none; font-weight: 500; }
+.footer-links a:hover { text-decoration: underline; }
+.footer-email { color: #fff; text-decoration: none; opacity: 1; display: inline-block; margin-bottom: .5rem; font-weight: 600; letter-spacing: .2px; }
+.footer-email:hover { text-decoration: underline; }
+.footer-social { display: flex; gap: .5rem; align-items: center; }
+.social-btn { display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.9); border-radius: 999px; color: #fff; transition: border-color .2s ease, color .2s ease, background .2s ease; text-decoration: none; }
+.social-btn:hover { color: var(--amf-secondary); border-color: var(--amf-secondary); background: rgba(0,0,0,0.06); }
+.social-btn i { font-size: 16px; line-height: 1; display: inline-block; }

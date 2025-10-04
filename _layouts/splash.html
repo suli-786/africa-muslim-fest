@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    {% include head/custom.html %}
+  </head>
+  <body>
+    {% include nav.html %}
+
+    {%- assign overlay_color = page.header.overlay_color | default: '#000000' -%}
+    {%- assign overlay_filter = page.header.overlay_filter | default: '0.4' -%}
+    {%- assign overlay_image = page.header.overlay_image | default: '' -%}
+
+    <div class="page__hero--overlay"
+      style="background-color: {{ overlay_color }};{%- if overlay_image != '' -%} background-image: linear-gradient(rgba(0, 0, 0, {{ overlay_filter }}), rgba(0, 0, 0, {{ overlay_filter }})), url('{{ overlay_image | relative_url }}');{%- endif -%}"
+    >
+      <div class="wrapper">
+        <div class="hero__content">
+          <h1 class="page__title">{{ page.title }}</h1>
+          {%- if page.excerpt -%}
+            <div class="page__lead">{{ page.excerpt | markdownify }}</div>
+          {%- endif -%}
+          {%- if page.header.actions -%}
+            {%- for action in page.header.actions -%}
+              <a class="btn btn--primary" href="{{ action.url }}">{{ action.label }}</a>
+            {%- endfor -%}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
+  </body>
+  </html>

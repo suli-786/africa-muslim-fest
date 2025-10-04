@@ -1,0 +1,42 @@
+title: ""   # clears the text title
+logo: "/assets/images/logo.png"
+
+# Tell theme to use your nav
+navigation: "main"
+
+description: "Celebrating African Muslim Leadership, Culture, Innovation, and Excellence"
+url: "https://suli-786.github.io"
+baseurl: "/africa-muslim-fest"   # if hosting at root, leave empty; if hosting under a path (like /project), set it
+
+plugins:
+  - jekyll-include-cache
+
+# remote_theme removed for offline build
+# minimal_mistakes_skin not used without remote theme
+
+# Add other site-level settings as needed
+# Navigation settings
+
+
+# Navigation (top navbar)
+# since it's a one-pager, you can anchor-link to sections
+# (the hrefs will scroll down to those IDs on the same page)
+include: ["_pages", "_includes", "assets/css"]
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Add custom stylesheet
