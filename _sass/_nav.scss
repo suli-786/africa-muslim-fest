@@ -13,9 +13,9 @@
 .amf-nav__links a:hover { color: var(--amf-white); background: rgba(0,0,0,0.08); }
 .amf-nav__cta { background: var(--amf-white); color: var(--amf-black); border: 0; border-radius: 6px; box-shadow: 0 1px 0 rgba(0,0,0,0.06); }
 .amf-nav__cta:hover { background: #f2f2f2; color: var(--amf-black); }
-.amf-nav__toggle { display: none; width: 36px; height: 32px; align-items: center; justify-content: center; border: 0; background: transparent; padding: 0; }
-.amf-nav__toggle span { display: block; width: 20px; height: 2px; background: var(--amf-black); }
-.amf-nav__toggle span + span { margin-top: 4px; }
+.amf-nav__toggle { display: none; width: 40px; height: 32px; align-items: center; justify-content: center; border: 0; background: transparent; padding: 0; flex-direction: column; gap: 6px; }
+.amf-nav__toggle span { display: block; width: 24px; height: 2px; background: var(--amf-black); border-radius: 2px; transition: transform .2s ease; }
+.amf-nav__toggle span + span { margin-top: 0; }
 .amf-nav-spacer { height: 64px; }
 @media (max-width: 768px) {
   .amf-nav__toggle { display: inline-flex; }
