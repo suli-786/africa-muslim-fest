@@ -11,6 +11,8 @@ baseurl: "/africa-muslim-fest"   # if hosting at root, leave empty; if hosting u
 plugins:
   - jekyll-include-cache
 
+permalink: pretty
+
 # remote_theme removed for offline build
 # minimal_mistakes_skin not used without remote theme
 

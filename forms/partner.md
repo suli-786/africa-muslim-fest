@@ -6,6 +6,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/hero.jpg
 excerpt: "Apply to partner or sponsor Africa Muslim Fest."
+permalink: /forms/partner/
 ---
 
 <section class="page__section form-section">
@@ -27,4 +28,3 @@ excerpt: "Apply to partner or sponsor Africa Muslim Fest."
     </div>
   </div>
 </section>
-

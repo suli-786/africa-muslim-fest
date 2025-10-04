@@ -6,6 +6,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/hero.jpg
 excerpt: "Submit your event to be part of Africa Muslim Fest."
+permalink: /forms/event/
 ---
 
 <section class="page__section form-section">
@@ -27,4 +28,3 @@ excerpt: "Submit your event to be part of Africa Muslim Fest."
     </div>
   </div>
 </section>
-

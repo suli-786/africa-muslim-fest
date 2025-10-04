@@ -6,6 +6,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/hero.jpg
 excerpt: "Volunteer your skills to the Africa Muslim Fest organising team."
+permalink: /forms/committee/
 ---
 
 <section class="page__section form-section">
@@ -27,4 +28,3 @@ excerpt: "Volunteer your skills to the Africa Muslim Fest organising team."
     </div>
   </div>
 </section>
-
