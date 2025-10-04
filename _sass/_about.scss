@@ -1,0 +1,77 @@
+/* =========================
+   About section
+   ========================= */
+.about { position: relative; }
+
+.about__grid {
+  display: grid;
+  gap: 1.75rem;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .about__grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 2.5rem;
+  }
+}
+
+.about__intro {
+  display: grid;
+  gap: 1rem;
+}
+
+.about__title {
+  margin: 0;
+  font-size: clamp(1.9rem, calc(1.7rem + 1vw), 2.4rem);
+  line-height: 1.2;
+}
+
+@media (min-width: 900px) {
+  .about__title::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    margin-top: 0.75rem;
+    background: var(--amf-secondary);
+    border-radius: 2px;
+  }
+}
+
+.about__lead {
+  margin: 0;
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.about__content {
+  display: grid;
+  gap: 1rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.about__content--mobile { display: none; }
+
+.about__content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 719px) {
+  .about__grid {
+    gap: 1.25rem;
+  }
+
+  .about__lead {
+    font-size: 1rem;
+  }
+
+  .about__content--desktop { display: none; }
+  .about__content--mobile {
+    display: grid;
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+}
