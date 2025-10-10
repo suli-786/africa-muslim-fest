@@ -5,8 +5,8 @@ logo: "/assets/images/logo.png"
 navigation: "main"
 
 description: "Celebrating African Muslim Leadership, Culture, Innovation, and Excellence"
-url: "https://suli-786.github.io"
-baseurl: "/africa-muslim-fest"   # if hosting at root, leave empty; if hosting under a path (like /project), set it
+url: "www.africamuslimfest.com"
+baseurl: ""   # if hosting at root, leave empty; if hosting under a path (like /project), set it
 
 plugins:
   - jekyll-include-cache
