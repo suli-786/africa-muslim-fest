@@ -10,7 +10,10 @@
 .site-footer__legal { list-style: none; padding: 0; margin: 0; display: flex; gap: .75rem; }
 .site-footer__legal a { color: #fff; opacity: .8; text-decoration: none; font-size: .9rem; }
 .site-footer__legal a:hover { text-decoration: underline; }
-.site-footer__brand img { height: 36px; display: block; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15)); }
+.site-footer__brand img { height: 52px; display: block; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15)); }
+@media (max-width: 600px) {
+  .site-footer__brand img { height: 44px; }
+}
 .footer-tagline { margin: .3rem 0 0; font-size: .9rem; opacity: .9; line-height: 1.5; max-width: 42ch; font-weight: 500; }
 .footer-tagline::after { content: ""; display: block; width: 64px; height: 2px; background: var(--amf-secondary); border-radius: 2px; margin: .5rem 0 0; opacity: .95; }
 .footer-heading { margin: 0 0 .4rem; font-size: 0.95rem; font-weight: 600; letter-spacing: .3px; opacity: .95; }
